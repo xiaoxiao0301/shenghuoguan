@@ -9,6 +9,13 @@ use Illuminate\Support\Facades\Storage;
 
 /**
  * 文件上传
+ * Nginx 需要 client_max_body_size 1024m; 配置在 http 项下
+ * PHP 需要配置 php-fpm.ini
+ *   file_uploads on
+ *   post_max_size 1024m
+ *   max_execution_time = 900
+ *   max_input_time = 900
+ *   memory_limit = 1024M 这个可以不用修改
  *
  * Class UploadsManager
  * @package App\Services

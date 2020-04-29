@@ -28,4 +28,12 @@ class UploadFileRequest extends FormRequest
             'folder' => 'required',
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'file.required' => '文件是必须的',
+            'folder.required' => '目录是必须的'
+        ];
+    }
 }

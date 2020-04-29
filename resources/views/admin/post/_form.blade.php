@@ -44,7 +44,7 @@
                     </script>
                     <div class="visible-sm space-10"></div>
                     <div class="col-md-4 text-right">
-                        <img src="{{ page_image($page_image) }}" class="img img_responsive" id="page-image-preview" style="max-height:40px">
+                        <img src="{{ $page_image ? page_image($page_image) : 'https://s2.ax1x.com/2019/11/21/M5K3pd.jpg' }}" class="img img_responsive" id="page-image-preview" style="max-height:40px">
                     </div>
                 </div>
             </div>
